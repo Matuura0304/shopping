@@ -5,7 +5,6 @@ from zaiko import *
 from uriage import *
 from datetime import datetime
 date = datetime.today()
-kago = []
 
 zaiko = session.query(Zaiko).all()
 def prin():
@@ -61,7 +60,7 @@ while True:
     yn = input('continue shopping? [y/n] :')
     if yn == 'y':
         continue
-        
+
     else:
         prin()
         print('byebye')
